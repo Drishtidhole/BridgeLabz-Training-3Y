@@ -1,0 +1,83 @@
+1. Difference between Frontend, Backend, and Full-Stack Development
+Frontend Development: Develops the part of a website that users see and interact with using HTML, CSS, and JavaScript.
+Backend Development: Handles server-side logic, databases, and APIs using languages like Java, Python, or PHP.
+Full-Stack Development: Works on both frontend and backend to build complete web applications.
+
+Example: In Amazon, the product page is frontend, order processing is backend, and a full-stack developer can work on both.
+
+2.Client (Browser)
+      
+HTTP Request
+      
+ Web Server
+      
+Processes Request
+      
+Database
+      
+Response
+      
+Client (Browser)
+
+3. How a Browser Requests and Displays a Web Page
+1.User enters a website URL.
+2. Browser sends an HTTP request to the web server.
+3. Server processes the request and fetches data if needed.
+4. Server sends HTML, CSS, and JavaScript files.
+5. Browser renders the page and displays it.
+
+4. Tools Required for Web Development
+Tool	        Purpose
+VS Code         Code editor
+Web Browser 	Test web pages
+Node.js	        Run JavaScript outside the browser
+Git	            Version control
+Live Server	    Live preview of web pages
+
+5. What is a Web Server?
+A web server is software that receives requests from browsers and sends web pages to users over HTTP/HTTPS.
+
+Examples:
+Apache
+Nginx
+Microsoft IIS
+Apache Tomcat
+
+6. Roles in a Web Development Project
+Frontend Developer: Designs the user interface and user experience.
+Backend Developer: Develops server-side logic, APIs, and manages databases.
+Database Administrator (DBA): Maintains, secures, and optimizes the database.
+
+7. Install VS Code and Configure It
+Steps:
+Install VS Code.
+Install extensions:
+Live Server
+Prettier
+HTML CSS Support
+Create index.html, style.css, and script.js.
+Open index.html using Live Server.
+Take a screenshot showing the setup.
+
+8. Static Website	            Dynamic Website
+Fixed content	                Content changes dynamically
+No database	                    Uses a database
+Example: Portfolio website	    Example: Amazon, Facebook
+
+9. Five Web Browsers and Their Rendering Engines
+Browser	            Rendering Engine
+Google Chrome	       Blink
+Microsoft Edge	       Blink
+Mozilla Firefox	       Gecko
+Safari	               WebKit
+Opera	               Blink
+
+10.Client (Browser)
+    
+   Web Server
+       
+Application
+       
+   Database
+       
+ Response to Client
