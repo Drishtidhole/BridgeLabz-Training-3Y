@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Form Builder</title>
+</head>
+<body>
+    <h2>Dynamic Form</h2>
+    <div id="formContainer"></div>
+    <pre id="output"></pre>
+
+    <script>
+        "use strict";
+
+        class FormBuilder {
+            constructor(fields) {
+                this.fields = fields;
+            }
+
+            createForm(containerId) {
+                const container = document.getElementById(containerId);
+
+                container.innerHTML = `
+                    <form id="dynamicForm">
+                        ${this.fields.map(field => `
+                            <label for="${field.name}">${field.label}</label><br>
+                            <input type="${field.type}" id="${field.name}"
+                                   name="${field.name}" required><br><br>
+                        `).join("")}
+                        <button type="submit">Submit</button>
+                    </form>
+                `;
+
+                document.getElementById("dynamicForm").addEventListener("submit", event => {
+                    event.preventDefault();
+                    document.getElementById("output").textContent =
+                        JSON.stringify(this.getFormData(), null, 2);
+                });
+            }
+
+            getFormData() {
+                const formData = {};
+
+                this.fields.forEach(field => {
+                    formData[field.name] = document.getElementById(field.name).value;
+                });
+
+                return formData;
+            }
+        }
+
+        const fields = [
+            { type: "text", label: "Username", name: "username" },
+            { type: "email", label: "Email", name: "email" },
+            { type: "password", label: "Password", name: "password" }
+        ];
+
+        const builder = new FormBuilder(fields);
+        builder.createForm("formContainer");
+    </script>
+</body>
+</html>

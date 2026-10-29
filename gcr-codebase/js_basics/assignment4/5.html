@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Booking</title>
+    <style>
+        body { font-family: Arial; max-width: 400px; margin: 30px auto; }
+        input { display: block; padding: 10px; width: 100%; box-sizing: border-box; margin: 10px 0; }
+        .error { color: red; }
+    </style>
+</head>
+<body>
+    <h2>Movie Ticket Booking</h2>
+
+    <form id="bookingForm">
+        <input id="name" placeholder="Full Name" required>
+        <input id="email" type="email" placeholder="Email" required>
+        <input id="seats" type="number" placeholder="Seats (1-10)" min="1" max="10" required>
+        <button type="submit">Book Tickets</button>
+    </form>
+
+    <p id="message"></p>
+    <div id="ticket"></div>
+
+    <script>
+        "use strict";
+
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const seats = Number(document.getElementById("seats").value);
+            const message = document.getElementById("message");
+            const ticket = document.getElementById("ticket");
+
+            const namePattern = /^[A-Za-z ]+$/;
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (!namePattern.test(name)) {
+                message.textContent = "Name must contain alphabets only.";
+                ticket.textContent = "";
+            } else if (!emailPattern.test(email)) {
+                message.textContent = "Enter a valid email.";
+                ticket.textContent = "";
+            } else if (!Number.isInteger(seats) || seats < 1 || seats > 10) {
+                message.textContent = "Seats must be between 1 and 10.";
+                ticket.textContent = "";
+            } else {
+                const booking = { name, email, seats };
+
+                message.textContent = "Booking successful!";
+                ticket.textContent =
+                    `Name: ${booking.name} | Email: ${booking.email} | Seats: ${booking.seats}`;
+            }
+        });
+    </script>
+</body>
+</html>
