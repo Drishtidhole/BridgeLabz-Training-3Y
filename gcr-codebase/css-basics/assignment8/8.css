@@ -1,0 +1,75 @@
+
+/* Do not apply a global border-box here because
+   this question compares two different box models. */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    text-align: center;
+}
+
+header, footer {
+    padding: 20px;
+    background: #183153;
+    color: white;
+}
+
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+.card {
+    width: 320px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.box {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    border: 5px solid #222;
+    margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.content-box {
+    box-sizing: content-box;
+    background: #ffd6d6;
+    border-color: #d62828;
+}
+
+.border-box {
+    box-sizing: border-box;
+    background: #caffbf;
+    border-color: #16803c;
+}
+
+.explanation {
+    max-width: 650px;
+    margin: 0 auto 30px;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}

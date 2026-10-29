@@ -1,0 +1,74 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    text-align: center;
+}
+
+header, footer {
+    background: #183153;
+    color: white;
+    padding: 20px;
+}
+
+/* Side-by-side images */
+.comparison {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.image-card {
+    flex: 1;
+    max-width: 500px;
+    margin: 0;
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px #ccc;
+}
+
+.image-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+/* Apply filter only to the second image */
+.filtered {
+    filter: brightness(50%);
+    transition: filter 0.5s ease-in-out;
+}
+
+/* Remove filter on hover */
+.filtered:hover {
+    filter: brightness(100%);
+}
+
+figcaption {
+    padding: 15px;
+    font-weight: bold;
+}
+
+@media (max-width: 700px) {
+    .comparison {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-card {
+        width: 100%;
+    }
+
+    .image-card img {
+        height: 250px;
+    }
+}

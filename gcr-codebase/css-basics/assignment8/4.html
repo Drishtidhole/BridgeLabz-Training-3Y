@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-title">CSS Selectors Practice</h1>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>Element and Class Selectors</h2>
+            <p>This paragraph uses an element selector.</p>
+            <p class="highlight">This paragraph uses a class selector.</p>
+        </section>
+
+        <section class="card">
+            <h2>ID and Attribute Selectors</h2>
+            <p id="special">This paragraph uses an ID selector.</p>
+            <input type="text" placeholder="Text input">
+            <a href="#main-title">Visit the heading</a>
+        </section>
+
+        <section class="card">
+            <h2>Combinator Selectors</h2>
+
+            <div class="parent">
+                <p>Direct child paragraph</p>
+                <div>
+                    <p>Descendant paragraph</p>
+                </div>
+            </div>
+
+            <h3>Sibling Heading</h3>
+            <p>Adjacent sibling paragraph.</p>
+            <p>General sibling paragraph.</p>
+        </section>
+
+        <section class="card">
+            <h2>List Example</h2>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Java</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>CSS Selector Demonstration</p>
+    </footer>
+</body>
+</html>

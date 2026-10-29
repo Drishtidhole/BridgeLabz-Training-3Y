@@ -1,0 +1,57 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+header, footer {
+    text-align: center;
+    background: #183153;
+    color: white;
+    padding: 20px;
+}
+
+/* Four cards on desktop */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 30px;
+}
+
+.card {
+    flex: 1 1 calc(25% - 20px);
+    min-width: 0;
+    padding: 25px;
+    text-align: center;
+    background: #dbeafe;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.card:hover {
+    background: #93c5fd;
+}
+
+/* Two columns on tablet */
+@media (max-width: 900px) {
+    .card {
+        flex: 1 1 calc(50% - 20px);
+    }
+}
+
+/* One column on mobile */
+@media (max-width: 600px) {
+    .card-container {
+        flex-direction: column;
+    }
+
+    .card {
+        flex: 1 1 auto;
+    }
+}

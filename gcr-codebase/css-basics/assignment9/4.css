@@ -1,0 +1,54 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #eef2ff;
+    color: #222;
+    text-align: center;
+}
+
+header, footer {
+    background: #312e81;
+    color: white;
+    padding: 20px;
+}
+
+/* Center the content */
+.content {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 40px;
+}
+
+/* Font scales between 1.5rem and 3rem */
+.content h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 25px;
+}
+
+/* Font scales between 1rem and 1.5rem */
+.content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    line-height: 1.7;
+    margin: 0;
+}
+
+@media (max-width: 700px) {
+    .content {
+        margin: 20px auto;
+        padding: 20px;
+    }
+
+    .content h1 {
+        line-height: 1.3;
+        margin-bottom: 15px;
+    }
+
+    .content p {
+        line-height: 1.6;
+    }
+}

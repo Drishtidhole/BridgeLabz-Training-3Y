@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f4f6;
+    text-align: center;
+}
+
+header, footer {
+    padding: 20px;
+    background: #183153;
+    color: white;
+}
+
+.profiles {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    padding: 40px 20px;
+}
+
+/* Fade-in animation on page load */
+.card {
+    width: 280px;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px #ccc;
+    animation: fadeIn 1s ease-in-out both;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.card:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+/* Animate the cards from below */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    filter: grayscale(100%);
+    transition: filter 0.4s ease;
+}
+
+/* Remove filter and lift card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px #aaa;
+}
+
+.card:hover img {
+    filter: none;
+}
+
+@media (max-width: 800px) {
+    .profiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}

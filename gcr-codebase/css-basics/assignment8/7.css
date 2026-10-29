@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #f5d0fe);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header, footer {
+    text-align: center;
+    padding: 20px;
+    background: #243b55;
+    color: white;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.card {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #999;
+    text-align: center;
+}
+
+.components {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: 2px solid #536dfe;
+    border-color: #536dfe;
+}
+
+button {
+    background: #536dfe;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #304ffe;
+    box-shadow: 0 3px 8px #aaa;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+.secondary {
+    background: #263238;
+}
+
+.secondary:hover {
+    background: #455a64;
+}

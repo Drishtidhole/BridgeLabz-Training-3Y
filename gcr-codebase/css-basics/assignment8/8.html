@@ -1,0 +1,50 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box-Sizing Comparison</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Box-Sizing Comparison</h1>
+    </header>
+
+    <main>
+        <section class="comparison">
+            <article class="card">
+                <h2>Content-Box</h2>
+                <div class="box content-box">
+                    Content Box
+                </div>
+                <p>Width: 200px</p>
+                <p>Padding: 20px</p>
+                <p>Border: 5px</p>
+                <p>Total width: 250px</p>
+            </article>
+
+            <article class="card">
+                <h2>Border-Box</h2>
+                <div class="box border-box">
+                    Border Box
+                </div>
+                <p>Width: 200px</p>
+                <p>Padding: 20px</p>
+                <p>Border: 5px</p>
+                <p>Total width: 200px</p>
+            </article>
+        </section>
+
+        <p class="explanation">
+            Content-box adds padding and border outside the specified width.
+            Border-box includes padding and border within the specified width.
+        </p>
+    </main>
+
+    <footer>
+        <p>CSS Box Model Demonstration</p>
+    </footer>
+</body>
+</html>

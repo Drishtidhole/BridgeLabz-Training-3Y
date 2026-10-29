@@ -1,0 +1,101 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    text-align: center;
+}
+
+header, footer {
+    background: #183153;
+    color: white;
+    padding: 20px;
+}
+
+.animation-container {
+    min-height: 65vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 30px;
+}
+
+.example {
+    width: 250px;
+    min-height: 180px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ccc;
+}
+
+/* Animation 1: moving box */
+.box {
+    width: 50px;
+    height: 50px;
+    background: teal;
+    animation: move 2s ease-in-out infinite alternate;
+}
+
+/* Move the box horizontally */
+@keyframes move {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(120px);
+    }
+}
+
+/* Animation 2: bouncing ball */
+.ball {
+    width: 40px;
+    height: 40px;
+    margin: 30px auto;
+    background: tomato;
+    border-radius: 50%;
+    animation: bounce 1s ease-in-out infinite;
+    animation-direction: alternate;
+    animation-iteration-count: 6;
+    animation-delay: 0.3s;
+}
+
+@keyframes bounce {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-50px);
+    }
+}
+
+/* Animation 3: changing text color */
+.color-text {
+    font-size: 24px;
+    font-weight: bold;
+    animation: colors 3s ease-in-out infinite alternate;
+}
+
+@keyframes colors {
+    0% {
+        color: red;
+    }
+    50% {
+        color: blue;
+    }
+    100% {
+        color: green;
+    }
+}
+
+@media (max-width: 700px) {
+    .animation-container {
+        flex-direction: column;
+    }
+}

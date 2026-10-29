@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+header, footer {
+    text-align: center;
+    background-color: #263238;
+    color: white;
+    padding: 15px;
+}
+
+/* Center boxes horizontally and vertically */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    min-height: 70vh;
+    padding: 20px;
+}
+
+/* Common properties */
+.box {
+    min-height: 150px;
+    max-width: 100%;
+    overflow: auto;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+.box1 {
+    width: 200px;
+    height: 150px;
+    background-color: #e53935;
+}
+
+.box2 {
+    width: 25%;
+    height: 180px;
+    background-color: #00897b;
+}
+
+.box3 {
+    width: 12em;
+    height: 25vh;
+    background-color: #3949ab;
+    font-size: 1em;
+}
+
+footer {
+    margin-top: 20px;
+}

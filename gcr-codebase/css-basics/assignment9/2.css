@@ -1,0 +1,87 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header with logo and navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #183153;
+    color: white;
+    padding: 15px 30px;
+}
+
+.logo {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #ffd166;
+}
+
+main {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+/* Three horizontal feature boxes */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.box {
+    flex: 1;
+    padding: 30px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 8px #ccc;
+    transition: transform 0.3s ease;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background: #183153;
+    color: white;
+}
+
+/* Stack feature boxes on smaller screens */
+@media (max-width: 750px) {
+    .features {
+        flex-direction: column;
+    }
+
+    .header {
+        flex-direction: column;
+        gap: 15px;
+    }
+}

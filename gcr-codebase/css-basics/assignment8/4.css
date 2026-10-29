@@ -1,0 +1,89 @@
+
+/* Element selector: styles all paragraphs */
+p {
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ID selector: styles the main heading */
+#main-title {
+    color: white;
+}
+
+/* Class selector: styles highlighted text */
+.highlight {
+    background: yellow;
+    padding: 5px;
+}
+
+/* ID selector: styles a specific paragraph */
+#special {
+    color: red;
+    font-weight: bold;
+}
+
+/* Attribute selector: selects text inputs */
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid teal;
+}
+
+/* Child combinator: selects direct child paragraphs */
+.parent > p {
+    background: #d7f9e9;
+}
+
+/* Descendant combinator: selects all nested paragraphs */
+.parent p {
+    padding: 8px;
+}
+
+/* Adjacent sibling: selects the first paragraph after h3 */
+h3 + p {
+    color: blue;
+}
+
+/* General sibling: selects all following paragraphs */
+h3 ~ p {
+    border-left: 3px solid orange;
+}
+
+/* Element selector: styles list items */
+li {
+    margin: 8px 0;
+}
+
+/* Basic page layout */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f7;
+}
+
+header, footer {
+    background: #183153;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    margin: 15px auto;
+    padding: 20px;
+    max-width: 700px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px #ccc;
+}
+
+a {
+    color: teal;
+}
+
+a:hover {
+    color: red;
+}

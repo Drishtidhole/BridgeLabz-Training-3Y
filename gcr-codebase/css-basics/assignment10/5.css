@@ -1,0 +1,47 @@
+
+/* Override Bootstrap theme variables */
+:root {
+    --bs-primary: #6d28d9;
+    --bs-primary-rgb: 109, 40, 217;
+    --bs-font-sans-serif: 'Poppins', sans-serif;
+}
+
+body {
+    font-family: var(--bs-font-sans-serif);
+    background: #f7f5ff;
+}
+
+.blog-navbar {
+    background: #2e1065;
+}
+
+.blog-card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.blog-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.15);
+}
+
+.blog-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+/* Custom themed buttons and badges */
+.btn-primary {
+    --bs-btn-bg: #6d28d9;
+    --bs-btn-border-color: #6d28d9;
+    --bs-btn-hover-bg: #4c1d95;
+    --bs-btn-hover-border-color: #4c1d95;
+}
+
+.blog-badge {
+    background: #ede9fe;
+    color: #5b21b6;
+}

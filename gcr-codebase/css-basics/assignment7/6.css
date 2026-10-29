@@ -1,0 +1,65 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+header, footer {
+    background-color: #263238;
+    color: white;
+    padding: 15px;
+}
+
+/* Arrange transformation boxes horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 70px 20px;
+}
+
+.item {
+    width: 150px;
+}
+
+/* Common box style */
+.box {
+    width: 120px;
+    height: 120px;
+    background-color: #00897b;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    transition: all 0.4s ease;
+}
+
+/* Rotate on hover */
+.rotate:hover {
+    transform: rotate(45deg);
+}
+
+/* Increase size on hover */
+.scale:hover {
+    transform: scale(1.2);
+}
+
+/* Move box on hover */
+.translate:hover {
+    transform: translate(15px, -15px);
+}
+
+/* Slant box on hover */
+.skew:hover {
+    transform: skew(15deg);
+}
+
+.item p {
+    margin-top: 25px;
+    font-weight: bold;
+}

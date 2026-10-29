@@ -1,0 +1,27 @@
+
+/* Profile image size */
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border: 5px solid white;
+    box-shadow: 0 3px 10px #ccc;
+}
+
+.about-text {
+    max-width: 650px;
+    line-height: 1.7;
+}
+
+.contact-form {
+    max-width: 600px;
+}
+
+/* Smooth button hover effect */
+.btn {
+    transition: transform 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}

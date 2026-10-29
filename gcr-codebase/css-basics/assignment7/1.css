@@ -1,0 +1,66 @@
+
+/* Basic page styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #243b55;
+    color: white;
+    padding: 15px;
+}
+
+/* Align boxes horizontally */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+}
+
+/* Common box styling */
+.box {
+    background-color: white;
+    padding: 20px;
+    width: 140px;
+    transition: all 0.3s ease;
+}
+
+/* Different border styles */
+.solid {
+    border: 3px solid blue;
+}
+
+.dashed {
+    border: 3px dashed green;
+}
+
+.double {
+    border: 5px double red;
+}
+
+.groove {
+    border: 5px groove purple;
+}
+
+/* Rounded corners */
+.rounded {
+    border: 3px solid orange;
+    border-radius: 20px;
+}
+
+/* Different padding */
+.large-padding {
+    border: 3px solid teal;
+    padding: 35px;
+}
+
+/* Hover changes border color */
+.box:hover {
+    border-color: #ff5722;
+}

@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f6f9;
+}
+
+header, footer {
+    background-color: #263238;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+.content {
+    padding: 25px;
+}
+
+/* Descendant selector: all li elements inside ul */
+.items li {
+    padding: 10px;
+}
+
+/* Child combinator > : direct li children of ul */
+.items > li {
+    border-bottom: 1px solid #ccc;
+}
+
+/* :nth-child() pseudo-class */
+.items li:nth-child(odd) {
+    background-color: #dbeafe;
+}
+
+/* :hover pseudo-class */
+.items li:hover {
+    background-color: #93c5fd;
+}
+
+/* Adjacent sibling + : p immediately after h2 */
+h2 + .items {
+    border: 2px solid steelblue;
+}
+
+/* General sibling ~ : p elements after description */
+.description ~ p {
+    color: darkgreen;
+}
+
+/* Attribute selector: input with type="text" */
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+/* Attribute selector: links beginning with https */
+a[href^="https"] {
+    color: green;
+    font-weight: bold;
+}
+
+/* :focus pseudo-class */
+input:focus, textarea:focus {
+    outline: 2px solid orange;
+}
+
+/* ::before pseudo-element */
+h2::before {
+    content: "★ ";
+    color: orange;
+}
+
+/* ::after pseudo-element */
+h2::after {
+    content: " ★";
+    color: orange;
+}
+
+/* Common form styling */
+input, textarea {
+    display: block;
+    width: 250px;
+    max-width: 90%;
+    padding: 10px;
+    margin: 12px 0;
+    box-sizing: border-box;
+}

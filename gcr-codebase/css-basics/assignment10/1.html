@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Landing Page</title>
+
+    <!-- Bootstrap 5 CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+    <link rel="stylesheet" href="CompanyLandingPage.css">
+</head>
+<body>
+    <!-- Responsive navbar -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">NovaTech</a>
+
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                        aria-controls="navbarMenu" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section uses container, row and column -->
+        <section class="hero py-5 text-center" id="home">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold">Build Your Future with NovaTech</h1>
+                        <p class="lead mt-3">
+                            We create smart digital solutions that help
+                            businesses grow and innovate.
+                        </p>
+                        <a href="#services" class="btn btn-primary btn-lg mt-3">
+                            Get Started
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container py-5" id="services">
+            <h2 class="text-center mb-4">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <article class="service-box p-4 text-center h-100">
+                        <h3>Web Development</h3>
+                        <p>Responsive websites built for modern businesses.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="service-box p-4 text-center h-100">
+                        <h3>Cloud Solutions</h3>
+                        <p>Secure and scalable cloud infrastructure.</p>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="service-box p-4 text-center h-100">
+                        <h3>Consulting</h3>
+                        <p>Practical guidance for digital transformation.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center p-3" id="contact">
+        <p class="mb-0">&copy; 2026 NovaTech. All rights reserved.</p>
+    </footer>
+</body>
+</html>

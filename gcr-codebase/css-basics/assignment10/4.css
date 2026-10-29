@@ -1,0 +1,26 @@
+
+body {
+    background: #fffaf0;
+    font-family: Arial, sans-serif;
+}
+
+.restaurant-header {
+    background: #78350f;
+}
+
+.food-card {
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px #ddd;
+}
+
+.food-card img {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+table td, table th {
+    padding: 14px;
+}

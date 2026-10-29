@@ -1,0 +1,72 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+header, footer {
+    background-color: #263238;
+    color: white;
+    padding: 15px;
+}
+
+/* Center the demonstrations */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 30px 15px;
+}
+
+/* Margin is the outermost space */
+.margin-layer {
+    background-color: #ffe0b2;
+    margin: 20px;
+    padding: 20px;
+}
+
+/* Border surrounds the padding */
+.border-layer {
+    border: 8px solid #ef6c00;
+    background-color: #fff3e0;
+    padding: 15px;
+}
+
+/* Padding is the space around content */
+.padding-layer {
+    background-color: #bbdefb;
+    padding: 20px;
+}
+
+/* Content is the innermost area */
+.content-layer {
+    background-color: #4caf50;
+    color: white;
+    padding: 25px;
+    font-weight: bold;
+}
+
+/* Default content-box includes padding and border
+   outside the specified width */
+.default-box {
+    box-sizing: content-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid blue;
+    background-color: #bbdefb;
+    margin: 15px auto;
+}
+
+/* border-box includes padding and border
+   inside the specified width */
+.border-box {
+    box-sizing: border-box;
+    width: 200px;
+    padding: 20px;
+    border: 5px solid green;
+    background-color: #c8e6c9;
+    margin: 15px auto;
+}
