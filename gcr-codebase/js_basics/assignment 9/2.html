@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Product Highlight</title>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .product {
+            padding: 15px;
+            margin: 10px;
+            border: 1px solid gray;
+            width: 250px;
+        }
+
+        .highlight {
+            background-color: lightyellow;
+        }
+
+        .selected {
+            color: red;
+            font-weight: bold;
+        }
+
+        .details {
+            display: none;
+        }
+
+        .product[data-discount="yes"] {
+            border: 2px solid green;
+            background-color: #e5ffe5;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Products</h1>
+</header>
+
+<main>
+
+    <section id="products">
+
+        <article class="product" data-discount="yes" data-stock="yes">
+            <h3>Laptop</h3>
+            <p>Price: ₹50,000</p>
+            <p class="details">8GB RAM, 512GB SSD</p>
+            <button class="favorite">♡ Favorite</button>
+        </article>
+
+        <article class="product" data-discount="no" data-stock="no">
+            <h3>Mobile</h3>
+            <p>Price: ₹20,000</p>
+            <p class="details">128GB Storage, 5G</p>
+            <button class="favorite">♡ Favorite</button>
+        </article>
+
+        <article class="product" data-discount="yes" data-stock="yes">
+            <h3>Headphones</h3>
+            <p>Price: ₹2,000</p>
+            <p class="details">Wireless Bluetooth</p>
+            <button class="favorite">♡ Favorite</button>
+        </article>
+
+        <article class="product" data-discount="no" data-stock="yes">
+            <h3>Keyboard</h3>
+            <p>Price: ₹1,500</p>
+            <p class="details">Mechanical Keyboard</p>
+            <button class="favorite">♡ Favorite</button>
+        </article>
+
+        <article class="product" data-discount="yes" data-stock="no">
+            <h3>Smart Watch</h3>
+            <p>Price: ₹3,000</p>
+            <p class="details">Fitness Tracking</p>
+            <button class="favorite">♡ Favorite</button>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="q2.js"></script>
+</body>
+</html>

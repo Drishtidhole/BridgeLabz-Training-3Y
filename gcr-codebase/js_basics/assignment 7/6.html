@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Table Filter</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        input {
+            padding: 10px;
+            width: 250px;
+            margin-bottom: 15px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 400px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        #noResults {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Search</h2>
+
+    <input type="text" id="searchInput" placeholder="Search students">
+
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Branch</th>
+                <th>CGPA</th>
+            </tr>
+        </thead>
+        <tbody id="studentTable">
+            <tr><td>Rahul</td><td>CSE</td><td>8.5</td></tr>
+            <tr><td>Priya</td><td>ECE</td><td>9.0</td></tr>
+            <tr><td>Amit</td><td>IT</td><td>7.8</td></tr>
+            <tr><td>Neha</td><td>CSE</td><td>8.9</td></tr>
+            <tr><td>Rohan</td><td>ME</td><td>7.5</td></tr>
+        </tbody>
+    </table>
+
+    <p id="noResults"></p>
+
+    <script src="q6.js"></script>
+</body>
+</html>

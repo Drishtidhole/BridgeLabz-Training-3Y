@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog Management</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .post {
+            border: 1px solid gray;
+            padding: 15px;
+            margin: 10px;
+        }
+
+        .highlight {
+            background-color: lightyellow;
+        }
+
+        .tag {
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Blog Admin Panel</h1>
+</header>
+
+<main>
+
+    <button id="add">Add New Post</button>
+    <button id="featured">Prepend Featured Post</button>
+    <button id="remove">Remove Last Post</button>
+    <button id="tag">Add Tag</button>
+    <button id="highlight">Highlight Keywords</button>
+
+    <section id="posts">
+
+        <article class="post">
+            <h2>Learning JavaScript</h2>
+            <p>JavaScript is useful for web development.</p>
+        </article>
+
+        <article class="post">
+            <h2>Learning jQuery</h2>
+            <p>jQuery makes DOM manipulation easier.</p>
+        </article>
+
+        <article class="post">
+            <h2>Cloud Computing</h2>
+            <p>Cloud computing provides online services.</p>
+        </article>
+
+    </section>
+
+</main>
+
+<script src="q8.js"></script>
+</body>
+</html>

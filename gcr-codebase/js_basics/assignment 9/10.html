@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        form {
+            width: 300px;
+            padding: 20px;
+        }
+
+        input {
+            display: block;
+            width: 100%;
+            padding: 8px;
+            margin: 10px 0;
+        }
+
+        button {
+            padding: 10px;
+        }
+
+        #message {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>User Registration</h1>
+</header>
+
+<main>
+
+    <form id="registrationForm">
+
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter name">
+
+        <label>Email</label>
+        <input type="email" id="email" placeholder="Enter email">
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <p id="message"></p>
+
+</main>
+
+<script src="q10.js"></script>
+</body>
+</html>

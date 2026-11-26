@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Team Directory</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .department {
+            border: 1px solid gray;
+            padding: 15px;
+            margin: 15px;
+        }
+
+        .employee {
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .highlight {
+            background-color: lightgreen;
+        }
+
+        .contact {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Our Team</h1>
+</header>
+
+<main>
+
+    <button id="random">Select Random Employee</button>
+    <button id="collapse">Collapse Team</button>
+    <button id="expand">Expand Team</button>
+
+    <section class="department">
+
+        <h2>Development Department</h2>
+
+        <div class="employee manager">
+            Manager: Rahul
+        </div>
+
+        <p class="contact">Email: rahul@example.com</p>
+
+        <div class="employee">Amit</div>
+        <p class="contact">Email: amit@example.com</p>
+
+        <div class="employee">Priya</div>
+        <p class="contact">Email: priya@example.com</p>
+
+    </section>
+
+    <section class="department">
+
+        <h2>Design Department</h2>
+
+        <div class="employee manager">
+            Manager: Neha
+        </div>
+
+        <p class="contact">Email: neha@example.com</p>
+
+        <div class="employee">Riya</div>
+        <p class="contact">Email: riya@example.com</p>
+
+        <div class="employee">Karan</div>
+        <p class="contact">Email: karan@example.com</p>
+
+    </section>
+
+</main>
+
+<script src="q5.js"></script>
+</body>
+</html>

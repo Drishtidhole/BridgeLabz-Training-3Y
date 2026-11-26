@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Multiple jQuery Dashboard</title>
+
+    <!-- First jQuery version -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <script>
+        var jq1 = jQuery.noConflict();
+    </script>
+
+    <!-- Second jQuery version -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+    <style>
+        .widget {
+            border: 1px solid gray;
+            padding: 20px;
+            margin: 10px;
+        }
+
+        .active {
+            background-color: lightgreen;
+        }
+
+        #modal {
+            display: none;
+            padding: 20px;
+            background-color: lightyellow;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Dashboard</h1>
+</header>
+
+<main>
+
+    <section id="carousel" class="widget">
+        <h2>Carousel</h2>
+        <p id="slide">Slide 1</p>
+    </section>
+
+    <section class="widget">
+        <h2>Dashboard Widgets</h2>
+
+        <button class="widgetButton">Widget 1</button>
+        <button class="widgetButton">Widget 2</button>
+        <button class="widgetButton">Widget 3</button>
+    </section>
+
+    <button id="notification">Show Notification</button>
+
+    <div id="modal">
+        <p>New Notification Received!</p>
+        <button id="close">Close</button>
+    </div>
+
+    <section class="widget">
+        <h2 title="This is the dashboard report">Hover to see tooltip</h2>
+    </section>
+
+</main>
+
+<script src="q9.js"></script>
+</body>
+</html>
